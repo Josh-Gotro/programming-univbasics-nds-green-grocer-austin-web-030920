@@ -1,8 +1,17 @@
+require 'pry'   # binding.pry
+require 'pp'    # pp 
+
 def find_item_by_name_in_collection(name, collection)
-  # Implement me first!
-  #
-  # Consult README for inputs and outputs
-end
+  i=0 
+    while i < collection.length do 
+      return collection[i] if collection[i][:item] == name
+    i += 1 
+    end
+    nil
+  end
+  #  name #=> "WINE"
+  # collection #=> [{:item=>"DOG FOOD"}, {:item=>"WINE"}, {:item=>"STRYCHNINE"}]
+  
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
@@ -34,3 +43,4 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
 end
+
