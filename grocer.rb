@@ -114,5 +114,3 @@ def checkout(cart, coupons)
 # end
 # total
 end
-## cart #=>  [{:item=>"BEETS", :price=>2.5, :clearance=>false}]
-## coupons #=> []
