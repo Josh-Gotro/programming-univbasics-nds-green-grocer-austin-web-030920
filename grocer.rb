@@ -57,11 +57,11 @@ i = 0
     item_w_coupon = find_item_by_name_in_collection(coupon_item, cart)
 
     if item && item[:count] >= coupons[i][:num]
-#       if item_w_coupon
-#         item_w_coupon[:count] += coupons[i][:num]
-#         item[:count] -= coupons[i][:num]
-#       else
-#         new_price = coupons[i][:cost] / coupons[i][:num]
+      if item_w_coupon
+        item_w_coupon[:count] += coupons[i][:num]
+        item[:count] -= coupons[i][:num]
+      else
+        new_price = coupons[i][:cost] / coupons[i][:num]
 
 #         item_w_coupon = {
 #           :item => coupon_item,
