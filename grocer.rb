@@ -86,15 +86,15 @@ end
 ##              {:item => "AVOCADO W/COUPON", :price => 2.50, :clearance => true, :count => 2}]
 
 def apply_clearance(cart)
-  i = 0
-  while cart[i] do
-    if cart[i][:clearance]
-      cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
-    end
+  # i = 0
+  # while cart[i] do
+  #   if cart[i][:clearance]
+  #     cart[i][:price] = (cart[i][:price] - (cart[i][:price] * 0.20)).round(2)
+  #   end
 
-    i += 1
-  end
-  cart
+  #   i += 1
+  # end
+  # cart
 end
 
 def checkout(cart, coupons)
