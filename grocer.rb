@@ -63,12 +63,12 @@ i = 0
       else
         new_price = coupons[i][:cost] / coupons[i][:num]
 
-#         item_w_coupon = {
-#           :item => coupon_item,
-#           :price => new_price,
-#           :count => coupons[i][:num],
-#           :clearance => item[:clearance]
-#         }
+        item_w_coupon = {
+          :item => coupon_item,
+          :price => new_price,
+          :count => coupons[i][:num],
+          :clearance => item[:clearance]
+        }
 
 #         cart << item_w_coupon
 #         item[:count] -= coupons[i][:num]
